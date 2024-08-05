@@ -86,6 +86,8 @@ roslaunch ip_ctrl load_ros_controller.launch
 
 参考`demo.py`中的代码，再在`ip_ctrl/src`中创建一个文件，编写一个控制器，使得倒立摆保持平衡（即竖直向上）。
 
+控制方法不限，可以使用PID，也可以使用LQR等。
+
 ## 任务提交
 
 请将你修改后的assignment_1文件夹以及`answer.md`文件打包成一个压缩包，命名为`assignment_1_你的学号_你的姓名.zip`，并提交到群里的云盘连接中。
