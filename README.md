@@ -5,9 +5,16 @@
 - Ubuntu 20.04
 - ROS noetic
 
+在运行之前，你可能需要安装一些依赖包．
+
+```bash
+sudo apt update
+sudo apt install ros-noetic-ros-control ros-noetic-ros-controllers
+```
+
 ## 下载这个仓库
 
-请使用git clone进行下载，而非直接点击download zip．如不了解git的基本操作，请先学一下．
+请尽量使用git clone进行下载，而非直接点击download zip．如不了解git的基本操作，请先学一下．
 
 请思考：应该把这个仓库的文件放在什么地方？
 * 提示1：请参考ROS的工作空间、包的概念．
