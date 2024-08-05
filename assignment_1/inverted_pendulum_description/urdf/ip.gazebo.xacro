@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/ip</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+    <gazebo reference="rod_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="ball_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <transmission name="horizontal_joint_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="horizontal_joint">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="horizontal_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+      </transmission>
+
+      <transmission name="pivot_joint_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="pivot_joint">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="pivot_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+      </transmission>
+
+</robot>
