@@ -60,7 +60,7 @@ roslaunch ip_ctrl load_ros_controller.launch
 
 ### 2. 修改模型
 
-根据你所学到的关于urdf和xacro的知识，修改某些文件中的某些参数：
+修改某些文件中的某些参数，完成如下的设置：
 
 * 设置水平方向上的移动为无阻尼的
 * 设置杆的长度为0.8m
